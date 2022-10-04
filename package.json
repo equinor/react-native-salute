@@ -1,26 +1,25 @@
 {
   "name": "react-native-salute",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Yet another toast module written in JS",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Bjarte Bore",
   "license": "MIT",
   "peerDependencies": {},
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^4.4.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^20.0.3",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0"
   },
   "dependencies": {
-    "eventemitter3": "^2.0.3",
-    "hoist-non-react-statics": "^2.2.1",
-    "react": "^16.0.0"
+    "eventemitter3": "^4.0.7",
+    "hoist-non-react-statics": "^3.3.2",
+    "react": "^17.0.0"
   }
 }

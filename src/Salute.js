@@ -48,7 +48,7 @@ export default class Salute extends Component {
     animatedValue: new Animated.Value(0),
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.state.animatedValue.addListener(this.onAnimationEnd);
   }
   componentDidMount() {
@@ -94,9 +94,11 @@ export default class Salute extends Component {
     }
 
     Animated.timing(
-      this.state.animatedValue,
-      { toValue: 0, duration: 350 },
-    ).start();
+      this.state.animatedValue,{
+        toValue: 0,
+        duration: 350,
+        useNativeDriver: true,
+      }).start();
   }
 
   show = () => {
@@ -106,9 +108,11 @@ export default class Salute extends Component {
     }
 
     Animated.timing(
-      this.state.animatedValue,
-      { toValue: 1, duration: 350 },
-    ).start();
+      this.state.animatedValue,{
+        toValue: 1,
+        duration: 350,
+        useNativeDriver: true,
+      }).start();
   }
 
   renderContent() {

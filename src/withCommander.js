@@ -63,7 +63,7 @@ export default (WrappedComponent) => {
       this.setState(state);
     }
 
-    componentWillMount() {
+    componentDidMount() {
       this._storeChangeUnsubscribe = store.subscribe(this.onStoreChange);
     }
 
